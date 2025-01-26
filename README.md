@@ -81,17 +81,17 @@ Output: Dense(1) -> Sigmoid
 
 The project implements three XAI techniques:
 
-- **Grad-CAM:** Generates a heatmap highlighting the regions of the input image that are most important for the model's prediction. For example, below is a Grad-CAM output for `person117_bact....png` located in the `pics` folder
+- **Grad-CAM:** Generates a heatmap highlighting the regions of the input image that are most important for the model's prediction. For example, below is a Grad-CAM output for `person117_bacteria_556_gradcam.png` located in the `pics` folder
 
-  ![Grad-CAM Image](pics/person117_bact_gradcam.png)
+  ![Grad-CAM Image](pics/person117_bacteria_556_gradcam.png)
 
-- **LIME:** Provides local explanations by creating a simpler model around the input image, highlighting superpixels that contributed most to the prediction. Below is a LIME output for `person117_bact....png` located in the `pics` folder
+- **LIME:** Provides local explanations by creating a simpler model around the input image, highlighting superpixels that contributed most to the prediction. Below is a LIME output for `person117_bacteria_556_lime.png` located in the `pics` folder
 
-  ![LIME Image](pics/person117_bact_lime.png)
+  ![LIME Image](pics/person117_bacteria_556_lime.png)
 
-- **SHAP:** Calculates Shapley values to explain how each feature (pixel) contributes to the prediction, indicating both the direction and magnitude of influence. Below is a SHAP output for `person117_bact....png` located in the `pics` folder
+- **SHAP:** Calculates Shapley values to explain how each feature (pixel) contributes to the prediction, indicating both the direction and magnitude of influence. Below is a SHAP output for `person117_bacteria_556_shap.png` located in the `pics` folder
 
-  ![SHAP Image](pics/person117_bact_shap.png)
+  ![SHAP Image](pics/person117_bacteria_556_shap.png)
 
 ## Model Performance
 
@@ -117,7 +117,7 @@ And also a the training history:
 
 1.  Clone this repository to your local machine:
     ```bash
-    git clone [repository_url]
+    git clone https://github.com/Psychellic/Pneumonia-Detection
     ```
 2.  Ensure you have the necessary libraries installed. You can install required packages with pip using:
     ```bash
